@@ -4,16 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title></title>
+    <title>mything</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="nav">
-        <div class="logo">
-            <img src="">
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <img src="mylogo.png" height="60px" >
+            </div>
+            
+            <div class="home">
+                <ul class="list">
+                
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+            
+                </ul>
+            </div>
+    
         </div>
-        <ul class="bar">
+        <section class="login">
 
-        </ul>
+
+            <header class="header">LogIn here!</header>
+            <form name = "f1" class="form" method="post" onsubmit="return validateForm()">
+                <!-- <div class="input-box">
+                    <label for="">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="enter your full name">
+                </div> -->
+                <div class="input-box">
+                    <label for="">E-mail Address</label>
+                    <input type="text" name="email" id="email" placeholder="enter your email address" />
+                </div>
+                <div class="input-box">
+                    <label for="">Password</label>
+                    <input type="password" name="password" id="password" placeholder="enter your password" />
+                </div> 
+                <!-- <div class="input-box">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpassword" placeholder="Confirm your password" /> 
+                 </div>  -->
+                <!-- <div class="column">
+                    <div class="input-box">
+                        <label for="">Phone no.</label>
+                        <input type="number" name="phone" id="phone" placeholder="enter your contact number" />
+                    </div>
+                    <div class="input-box">
+                        <label for="">Age</label>
+                        <input type="number" name="age" id="age" placeholder="enter your age" />
+                
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="">Date of birth</label>
+                        <input type="date" id="date" placeholder="enter your full date of birth">
+                    </div>
+                </div> -->
+                <!-- <div class="gender-box">
+                    <h3>Gender</h3>
+                    <div class="gender-option">
+                        <div class="gender">
+                            <input type="radio" id="check-male" name="gender" checked/>
+                            <label for="check-male">male</label>
+                           
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-female" name="gender"/>
+                            <label for="check-female">female</label>
+                           
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="check-other" name="gender"/>
+                            <label for="check-other">others</label>
+                           
+                        </div>
+                    </div>
+                </div> -->
+                
+                <button id="button1" type="submit">LogIn</button>
+            </form>
+        </section>
     </div>
+    
 </body>
 </html>

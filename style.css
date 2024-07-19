@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+
+}
+body {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    height: 100%;
+}
+.nav {
+    background-color: rgb(240, 153, 223);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    /* margin: 10px 10px; */
+    align-items: center;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.logo {
+    display: block;
+    color: rgb(16, 15, 15);
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    width: 50px;
+    text-align: left;
+} 
+.home {
+    list-style-type: none;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9b989804; 
+
+}
+li a {
+  /* background-color: aqua;  */
+    display: block;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    justify-content: space-evenly;
+   } 
+li a:hover {
+  background-color: rgb(227, 114, 210);
+  border-radius: 10px;
+}
+.login{
+   
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    width: 30%;
+    height: 7%;
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(230, 111, 218);
+    box-sizing: content-box;
+    text-align: left;
+    
+}
+
+.login header{
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+}
+.login .form {
+    margin-top: 30px;
+}
+.form .input-box {
+    width: 100%;
+    margin: 10px;
+    /* height: 20px; */
+}
+.input-box label {
+    color: rgb(114, 46, 103);
+}
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    color: #3f383f;
+    margin-top: 6px;
+    outline:rgb(114, 46, 103);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgb(171, 143, 166);
+}
+/* .form .column {
+    display: flex;
+    column-gap: 60px;
+    flex-direction: row;
+
+    padding: 0;
+    
+} */
+/* .form .gender-box {
+    margin-top: 20px;
+}
+.gender-box h3{
+    color: #3f383f;
+    font-weight: 400;
+    margin-bottom: 6px;
+} */
+/* .form :where( .gender-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.form .gender {
+    column-gap: 5px;
+    cursor: pointer;
+}
+.gender input {
+    accent-color: rgb(197, 91, 177);;
+}
+
+.form :where( .gender input, .gender label) {
+    cursor: pointer;
+}
+.gender label {
+    color:#9d919d;
+}
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #3f383f;
+} */
+.form button{
+    height: 50px;
+    width: 100%;
+    color: #f4eef4;
+    border: #3f383f;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: all;
+    background-color: rgb(219, 86, 194);
+}
+.form button:hover {
+    background-color: #a01589;
+}
