@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <title>mything</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="index.js"></script>
 </head>
 <body>
+    <!-- <img src="assets/background.png"> -->
     <div class="container">
         <div class="nav">
             <div class="logo">
-                <img src="mylogo.png" height="60px" >
+                <img src="assets/mylogo.png" height="60px" >
             </div>
             
             <div class="home">
@@ -31,10 +32,7 @@
 
             <header class="header">LogIn here!</header>
             <form name = "f1" class="form" method="post" onsubmit="return validateForm()">
-                <!-- <div class="input-box">
-                    <label for="">Full Name</label>
-                    <input type="text" name="name" id="name" placeholder="enter your full name">
-                </div> -->
+                
                 <div class="input-box">
                     <label for="">E-mail Address</label>
                     <input type="text" name="email" id="email" placeholder="enter your email address" />
@@ -43,46 +41,6 @@
                     <label for="">Password</label>
                     <input type="password" name="password" id="password" placeholder="enter your password" />
                 </div> 
-                <!-- <div class="input-box">
-                    <label for="">Confirm Password</label>
-                    <input type="password" name="cpassword" id="cpassword" placeholder="Confirm your password" /> 
-                 </div>  -->
-                <!-- <div class="column">
-                    <div class="input-box">
-                        <label for="">Phone no.</label>
-                        <input type="number" name="phone" id="phone" placeholder="enter your contact number" />
-                    </div>
-                    <div class="input-box">
-                        <label for="">Age</label>
-                        <input type="number" name="age" id="age" placeholder="enter your age" />
-                
-                    </div>
-                    
-                    <div class="input-box">
-                        <label for="">Date of birth</label>
-                        <input type="date" id="date" placeholder="enter your full date of birth">
-                    </div>
-                </div> -->
-                <!-- <div class="gender-box">
-                    <h3>Gender</h3>
-                    <div class="gender-option">
-                        <div class="gender">
-                            <input type="radio" id="check-male" name="gender" checked/>
-                            <label for="check-male">male</label>
-                           
-                        </div>
-                        <div class="gender">
-                            <input type="radio" id="check-female" name="gender"/>
-                            <label for="check-female">female</label>
-                           
-                        </div>
-                        <div class="gender">
-                            <input type="radio" id="check-other" name="gender"/>
-                            <label for="check-other">others</label>
-                           
-                        </div>
-                    </div>
-                </div> -->
                 
                 <button id="button1" type="submit">LogIn</button>
             </form>
