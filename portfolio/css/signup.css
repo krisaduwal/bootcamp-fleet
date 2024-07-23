@@ -59,7 +59,7 @@ li a:hover {
   background-color: rgb(227, 114, 210);
   border-radius: 10px;
 }
-.login{
+.signup{
    
     float: right;
     margin-right: 20px;
@@ -75,14 +75,14 @@ li a:hover {
     
 }
 
-.login header{
+.signup header{
     font-weight: 500;
     color: black;
     text-align: center;
     font-style: italic;
     font-size: 40px;
 }
-.login .form {
+.signup .form {
     margin-top: 30px;
 }
 .form .input-box {
@@ -107,52 +107,7 @@ li a:hover {
 .input-box input:focus {
     box-shadow: 0 1px 0 rgb(171, 143, 166);
 }
-/* .form .column {
-    display: flex;
-    column-gap: 60px;
-    flex-direction: row;
 
-    padding: 0;
-    
-} */
-/* .form .gender-box {
-    margin-top: 20px;
-}
-.gender-box h3{
-    color: #3f383f;
-    font-weight: 400;
-    margin-bottom: 6px;
-} */
-/* .form :where( .gender-option, .gender) {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-    flex-wrap: wrap;
-}
-.form .gender {
-    column-gap: 5px;
-    cursor: pointer;
-}
-.gender input {
-    accent-color: rgb(197, 91, 177);;
-}
-
-.form :where( .gender input, .gender label) {
-    cursor: pointer;
-}
-.gender label {
-    color:#9d919d;
-}
-.address :where(input, .select-box) {
-    margin-top: 15px;
-}
-.select-box select{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    color: #3f383f;
-} */
 .form button{
     height: 50px;
     width: 100%;

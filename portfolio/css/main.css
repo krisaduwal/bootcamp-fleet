@@ -93,9 +93,13 @@ li a:hover {
 }
 .icons {
     color: rgb(215, 81, 184);
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
 }
 .social-icons {
     color: aqua;
+    justify-content: center;
 }
 .i {
     color: aqua;

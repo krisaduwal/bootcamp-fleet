@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>mything</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/script/index.js"></script>
+    <title>sign up</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <script src="/script/signup.js"></script>
 </head>
 <body>
     <!-- <img src="assets/background.png"> -->
@@ -22,20 +22,25 @@
                     <li><a href="/app/main.html">HOME</a></li>
                     <li><a href="/app/skills.html">SKILLS</a></li>
                     <li><a href="/app/projects.html">PROJECTS</a></li>
-                    <li><a href="/app/signup.html">SIGN UP</a></li>
                     <li><a href="/app/contact.html">CONTACT</a></li>
+                    <li><a href="/app/index.html">LOG IN</a></li>
+
+
 
             
                 </ul>
             </div>
     
         </div>
-        <section class="login">
+        <section class="signup">
 
 
-            <header class="header">LogIn here!</header>
-            <form name = "f1" class="form" method="post" onsubmit="return validateForm()">
-                
+            <header class="header">Signup here!</header>
+            <form name = "f1" class="form" method="post" onsubmit="return validate()">
+                <div class="input-box">
+                    <label for="">Username</label>
+                    <input type="text" name="username" id="username" placeholder="enter your username" />
+                </div>
                 <div class="input-box">
                     <label for="">E-mail Address</label>
                     <input type="text" name="email" id="email" placeholder="enter your email address" />
@@ -44,8 +49,12 @@
                     <label for="">Password</label>
                     <input type="password" name="password" id="password" placeholder="enter your password" />
                 </div> 
+                <div class="input-box">
+                    <label for="">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpassword" placeholder="confirm your password" />
+                </div> 
                 
-                <button id="button1" type="submit">LogIn</button>
+                <button id="button1" type="submit">Signup</button>
             </form>
         </section>
     </div>
