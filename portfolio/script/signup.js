@@ -5,15 +5,15 @@
 // }
 
 function validate() {
+    
     var username = document.getElementsByName('username')[0].value;
     var email= document.getElementsByName('email')[0].value;
     var password = document.getElementsByName('password')[0].value;  
     var cpassword = document.getElementsByName('cpassword')[0].value;
-        
-
     var atposition=email.indexOf("@");  
     var dotposition=email.lastIndexOf(".");  
-    if(username==null || username == ""){
+   
+    if(username.length < 1){
         alert("please enter username");
         return false;
     }
@@ -36,11 +36,16 @@ function validate() {
     else{
         // alert('ok')
         location.replace("main.html");
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+        console.log(email);
+        console.log(password);
     }
     let obj = {
         
         email:email
     };
+
     alert(JSON.stringify(obj));
     // document.getElementById("f1").reset();
     return false;
