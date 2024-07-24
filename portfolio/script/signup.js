@@ -41,8 +41,7 @@ function validate() {
         console.log(email);
         console.log(password);
     }
-    let obj = {
-        
+    let obj = {  
         email:email
     };
 
