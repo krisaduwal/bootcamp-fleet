@@ -21,7 +21,14 @@ function check() {
     let obj = {      
         email:storedEmail
     };
+    fetch("https://jsonplaceholder.typicode.com/users", {
+        method:"GET",
+        headers:{
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify(obj)
+    }).then(response=>response.json().then(data=>alert(JSON.stringify(data))))
 
-    alert(JSON.stringify(obj));
+    // alert(JSON.stringify(obj));
     return false;
 }

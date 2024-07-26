@@ -35,17 +35,23 @@ function validate() {
     }
     else{
         // alert('ok')
-        location.replace("main.html");
+        // location.replace("main.html");
         localStorage.setItem("email", email);
         localStorage.setItem("password", password);
-        console.log(email);
-        console.log(password);
     }
     let obj = {  
         email:email
     };
-
-    alert(JSON.stringify(obj));
+    fetch("https://jsonplaceholder.typicode.com/users",{
+        method:"POST",
+        headers:{
+            "Content-type": "application/json; charset=UTF-8"
+        },
+        body: JSON.stringify(obj)
+    }).then(response=>response.json()).then(data=>alert(JSON.stringify(data)))
+        location.replace("index.html");
+    
+    // alert(JSON.stringify(obj));
     // document.getElementById("f1").reset();
     return false;
 }

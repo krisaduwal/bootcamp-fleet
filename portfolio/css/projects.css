@@ -54,3 +54,29 @@ li a:hover {
   background-color: rgb(227, 114, 210);
   border-radius: 10px;
 }
+
+.projects {
+    /* background-color: white; */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+}
+.data-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-item:last-child {
+    border-bottom: none;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: black;
+
+}
